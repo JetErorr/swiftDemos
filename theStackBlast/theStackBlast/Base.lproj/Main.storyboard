@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="theStackBlast" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Can You Feel The Love Tonight" translatesAutoresizingMaskIntoConstraints="NO" id="G56-uc-2J7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="File Filer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBC-hH-jvH">
+                                <rect key="frame" x="146" y="242" width="122.5" height="106"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="53"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="685-MZ-0MO">
+                                <rect key="frame" x="0.0" y="388" width="414" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBL-yI-abY">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.58613006161971826" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Create A New File">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNG-ye-l1T">
+                                        <rect key="frame" x="0.0" y="30" width="414" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.58613006161971826" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Open A File">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9h-Aw-lBr">
+                                        <rect key="frame" x="0.0" y="60" width="414" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.58613006161971826" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Do Something">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irP-cy-xgE">
+                                        <rect key="frame" x="0.0" y="90" width="414" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.58613006161971826" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Exit App">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="685-MZ-0MO" firstAttribute="top" secondItem="RBC-hH-jvH" secondAttribute="bottom" constant="40" id="1uN-uR-8ue"/>
+                            <constraint firstItem="685-MZ-0MO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4EJ-d6-zJw"/>
+                            <constraint firstItem="685-MZ-0MO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AkV-XJ-7ZG"/>
+                            <constraint firstItem="G56-uc-2J7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GuH-Ie-vHq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="685-MZ-0MO" secondAttribute="trailing" id="TIc-gf-gYK"/>
+                            <constraint firstItem="RBC-hH-jvH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jus-gS-UMU"/>
+                            <constraint firstAttribute="trailing" secondItem="G56-uc-2J7" secondAttribute="trailing" id="t1k-eQ-Ytu"/>
+                            <constraint firstAttribute="bottom" secondItem="G56-uc-2J7" secondAttribute="bottom" id="vnA-zk-I3n"/>
+                            <constraint firstItem="685-MZ-0MO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="x0o-WJ-VNE"/>
+                            <constraint firstItem="G56-uc-2J7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xgd-d4-d49"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Can You Feel The Love Tonight" width="480" height="300"/>
+    </resources>
+</document>

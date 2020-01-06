@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testAppOne" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SE8Q97o" translatesAutoresizingMaskIntoConstraints="NO" id="Ctw-DV-JaV">
+                                <rect key="frame" x="-753" y="-92" width="1920" height="1080"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2Y-2R-2AT">
+                                <rect key="frame" x="141" y="427" width="132" height="42"/>
+                                <color key="backgroundColor" red="0.39502777296383196" green="0.40005650684176719" blue="0.42986965673575128" alpha="0.723481514084507" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="MzP-oY-LYL"/>
+                                    <constraint firstAttribute="width" constant="132" id="XCO-mS-sqh"/>
+                                </constraints>
+                                <state key="normal" title="Create New File">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GfD-MM-TaH">
+                                <rect key="frame" x="141" y="479" width="132" height="42"/>
+                                <color key="backgroundColor" red="0.39502777296383196" green="0.40005650684176719" blue="0.42986965673575128" alpha="0.723481514084507" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="O16-xk-imT"/>
+                                    <constraint firstAttribute="width" constant="132" id="pZI-Hb-HHZ"/>
+                                </constraints>
+                                <state key="normal" title="Open A File">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCk-c8-isl">
+                                <rect key="frame" x="141" y="531" width="132" height="42"/>
+                                <color key="backgroundColor" red="0.39502777296383196" green="0.40005650684176719" blue="0.42986965673575128" alpha="0.723481514084507" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="Gin-Yn-tdv"/>
+                                    <constraint firstAttribute="height" constant="42" id="IAc-qW-SKU"/>
+                                </constraints>
+                                <state key="normal" title="Exit App">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="File Filer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6X-3C-Pqk">
+                                <rect key="frame" x="141" y="286" width="132" height="111"/>
+                                <color key="backgroundColor" red="0.50830811618520033" green="0.65056745214732004" blue="0.8940657383419689" alpha="0.85048965669014087" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="111" id="G9N-mj-vdU"/>
+                                    <constraint firstAttribute="width" constant="132" id="msM-IS-wFO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="K2Y-2R-2AT" firstAttribute="top" secondItem="R6X-3C-Pqk" secondAttribute="bottom" constant="30" id="1Ox-he-cUs"/>
+                            <constraint firstItem="cCk-c8-isl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CjP-nN-aKu"/>
+                            <constraint firstItem="GfD-MM-TaH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GGU-D4-FoL"/>
+                            <constraint firstItem="K2Y-2R-2AT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RJy-3F-hhK"/>
+                            <constraint firstItem="Ctw-DV-JaV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WKS-4w-75k"/>
+                            <constraint firstItem="K2Y-2R-2AT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WRq-2b-0R9"/>
+                            <constraint firstItem="GfD-MM-TaH" firstAttribute="top" secondItem="K2Y-2R-2AT" secondAttribute="bottom" constant="10" id="YF4-Vt-aSY"/>
+                            <constraint firstItem="R6X-3C-Pqk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="abf-2L-fni"/>
+                            <constraint firstItem="cCk-c8-isl" firstAttribute="top" secondItem="GfD-MM-TaH" secondAttribute="bottom" constant="10" id="efW-Y5-7gQ"/>
+                            <constraint firstItem="Ctw-DV-JaV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="q1Z-2F-Q1M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="abI-Ev-JzJ">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </objects>
+            <point key="canvasLocation" x="112.23021582733814" y="78.776978417266193"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SE8Q97o" width="1920" height="1080"/>
+    </resources>
+</document>
