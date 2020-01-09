@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10A7142423C7023E00A4E2B7 /* cardflip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 10A7142023C7023E00A4E2B7 /* cardflip.wav */; };
+		10A7142523C7023E00A4E2B7 /* shuffle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 10A7142123C7023E00A4E2B7 /* shuffle.wav */; };
+		10A7142623C7023E00A4E2B7 /* dingcorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 10A7142223C7023E00A4E2B7 /* dingcorrect.wav */; };
+		10A7142723C7023E00A4E2B7 /* dingwrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 10A7142323C7023E00A4E2B7 /* dingwrong.wav */; };
+		10A7142A23C7027800A4E2B7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A7142923C7027800A4E2B7 /* AVFoundation.framework */; };
+		10A7142C23C702D600A4E2B7 /* soundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A7142B23C702D600A4E2B7 /* soundManager.swift */; };
 		10DF5AC023C47FF1003D894C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5ABF23C47FF1003D894C /* AppDelegate.swift */; };
 		10DF5AC223C47FF1003D894C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5AC123C47FF1003D894C /* SceneDelegate.swift */; };
 		10DF5AC423C47FF1003D894C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5AC323C47FF1003D894C /* ViewController.swift */; };
@@ -19,6 +25,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10A7142023C7023E00A4E2B7 /* cardflip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = cardflip.wav; path = ../../../../../Downloads/Sounds/cardflip.wav; sourceTree = "<group>"; };
+		10A7142123C7023E00A4E2B7 /* shuffle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = shuffle.wav; path = ../../../../../Downloads/Sounds/shuffle.wav; sourceTree = "<group>"; };
+		10A7142223C7023E00A4E2B7 /* dingcorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = dingcorrect.wav; path = ../../../../../Downloads/Sounds/dingcorrect.wav; sourceTree = "<group>"; };
+		10A7142323C7023E00A4E2B7 /* dingwrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = dingwrong.wav; path = ../../../../../Downloads/Sounds/dingwrong.wav; sourceTree = "<group>"; };
+		10A7142923C7027800A4E2B7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		10A7142B23C702D600A4E2B7 /* soundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soundManager.swift; sourceTree = "<group>"; };
 		10DF5ABC23C47FF1003D894C /* andAnotherOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = andAnotherOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DF5ABF23C47FF1003D894C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10DF5AC123C47FF1003D894C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,17 +49,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10A7142A23C7027800A4E2B7 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10A7141723C701D800A4E2B7 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				10A7142023C7023E00A4E2B7 /* cardflip.wav */,
+				10A7142223C7023E00A4E2B7 /* dingcorrect.wav */,
+				10A7142323C7023E00A4E2B7 /* dingwrong.wav */,
+				10A7142123C7023E00A4E2B7 /* shuffle.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		10A7142823C7027800A4E2B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10A7142923C7027800A4E2B7 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		10DF5AB323C47FF1003D894C = {
 			isa = PBXGroup;
 			children = (
 				10DF5ABE23C47FF1003D894C /* andAnotherOne */,
 				10DF5ABD23C47FF1003D894C /* Products */,
+				10A7142823C7027800A4E2B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,14 +95,16 @@
 		10DF5ABE23C47FF1003D894C /* andAnotherOne */ = {
 			isa = PBXGroup;
 			children = (
-				10DF5ABF23C47FF1003D894C /* AppDelegate.swift */,
+				10A7141723C701D800A4E2B7 /* Sounds */,
+				10DF5AD523C4AA7E003D894C /* Card.swift */,
+				10A7142B23C702D600A4E2B7 /* soundManager.swift */,
 				10DF5AD323C4A8E7003D894C /* CardModel.swift */,
 				10DF5AD923C4AEFB003D894C /* CardCollectionViewCell.swift */,
-				10DF5AD523C4AA7E003D894C /* Card.swift */,
 				10DF5AC323C47FF1003D894C /* ViewController.swift */,
 				10DF5AC523C47FF1003D894C /* Main.storyboard */,
 				10DF5AC823C47FF2003D894C /* Assets.xcassets */,
 				10DF5AC123C47FF1003D894C /* SceneDelegate.swift */,
+				10DF5ABF23C47FF1003D894C /* AppDelegate.swift */,
 				10DF5ACA23C47FF2003D894C /* LaunchScreen.storyboard */,
 				10DF5ACD23C47FF2003D894C /* Info.plist */,
 			);
@@ -135,8 +170,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				10DF5ACC23C47FF2003D894C /* LaunchScreen.storyboard in Resources */,
+				10A7142723C7023E00A4E2B7 /* dingwrong.wav in Resources */,
+				10A7142423C7023E00A4E2B7 /* cardflip.wav in Resources */,
 				10DF5AC923C47FF2003D894C /* Assets.xcassets in Resources */,
 				10DF5AC723C47FF1003D894C /* Main.storyboard in Resources */,
+				10A7142523C7023E00A4E2B7 /* shuffle.wav in Resources */,
+				10A7142623C7023E00A4E2B7 /* dingcorrect.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10A7142C23C702D600A4E2B7 /* soundManager.swift in Sources */,
 				10DF5AC423C47FF1003D894C /* ViewController.swift in Sources */,
 				10DF5AD423C4A8E7003D894C /* CardModel.swift in Sources */,
 				10DF5AD623C4AA7E003D894C /* Card.swift in Sources */,
