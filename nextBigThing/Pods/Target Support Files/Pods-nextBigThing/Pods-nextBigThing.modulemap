@@ -1,0 +1,6 @@
+framework module Pods_nextBigThing {
+  umbrella header "Pods-nextBigThing-umbrella.h"
+
+  export *
+  module * { export * }
+}
