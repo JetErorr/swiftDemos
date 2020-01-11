@@ -12,27 +12,42 @@ import Firebase
 
 class SecondViewController: UITableViewController{
     
+    //    var tableData = ["Message1", "Message2", "Message3"]
+    var name = [String]()
+    var answer = [String]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let dbRef = Database.database().reference()
-        let test = dbRef.value(forKeyPath: "chatApp")
-        if test != nil{
-            print(test!)
+        dbRef.child("chatApp").observe(.value) { (snapshot) in
+            let fbaseValue = snapshot.value as? NSDictionary
+            
+            if let temp = fbaseValue{
+                
+                for (key, _) in temp{
+                    
+                    let temp2:NSObject = temp[key] as! NSObject
+                    
+                    self.name.append(temp2.value(forKey: "username") as! String)
+                    self.answer.append(temp2.value(forKey: "answer") as! String)
+                    
+                }
+            }
+            self.tableView.reloadData()
         }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return name.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "listAnswer", for: indexPath)
+        let cell:CustomCell = tableView.dequeueReusableCell(withIdentifier: "listAnswer", for: indexPath) as! CustomCell
+        
+        cell.lblName?.text = name[indexPath.row]
+        cell.lblAnswer?.text = answer[indexPath.row]
+        
         return cell
     }
-    
 }

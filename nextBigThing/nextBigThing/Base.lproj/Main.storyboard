@@ -123,13 +123,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="listAnswer" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="listAnswer" id="PNw-f3-OiN">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="listAnswer" id="PNw-f3-OiN" customClass="CustomCell" customModule="nextBigThing" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PNw-f3-OiN" id="XWP-op-CM7">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUb-r5-6tq">
+                                            <rect key="frame" x="20" y="11.333333333333336" width="45" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nC3-F5-80K">
+                                            <rect key="frame" x="337" y="11.333333333333336" width="57" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="GUb-r5-6tq" firstAttribute="centerY" secondItem="XWP-op-CM7" secondAttribute="centerY" id="112-qJ-NXB"/>
+                                        <constraint firstItem="nC3-F5-80K" firstAttribute="centerY" secondItem="XWP-op-CM7" secondAttribute="centerY" id="1lb-C6-XLO"/>
+                                        <constraint firstItem="GUb-r5-6tq" firstAttribute="leading" secondItem="XWP-op-CM7" secondAttribute="leadingMargin" id="Hpn-LH-yyT"/>
+                                        <constraint firstItem="nC3-F5-80K" firstAttribute="trailing" secondItem="XWP-op-CM7" secondAttribute="trailingMargin" id="Wz4-EI-HQm"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lblAnswer" destination="nC3-F5-80K" id="iha-xQ-i9W"/>
+                                    <outlet property="lblName" destination="GUb-r5-6tq" id="xfr-Cv-YBm"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -138,10 +162,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="hWp-jX-0FD"/>
+                    <connections>
+                        <outlet property="tableView" destination="4We-6R-14m" id="je0-Zj-zIh"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="awQ-Xy-Iay" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1986" y="129"/>
+            <point key="canvasLocation" x="1985.5072463768117" y="128.57142857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="D9a-nF-Ba4">
