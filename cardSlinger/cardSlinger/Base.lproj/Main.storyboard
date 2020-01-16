@@ -16,10 +16,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="aew-N6-S47">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480.00000000000011"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="BEx-BK-hXH">
-                                <rect key="frame" x="38" y="20" width="244" height="134"/>
+                                <rect key="frame" x="99" y="20" width="122" height="67"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="uxD-ag-9Bs"/>
                                 </constraints>
@@ -35,21 +35,21 @@
                                 </variation>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="lTp-pg-74a" userLabel="dealTable">
-                                <rect key="frame" x="-92.5" y="52.5" width="505" height="455"/>
+                                <rect key="frame" x="27.5" y="153" width="265" height="254"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="w24-tf-G86" userLabel="cards">
-                                        <rect key="frame" x="0.0" y="0.0" width="505" height="340"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="265" height="170"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card4" translatesAutoresizingMaskIntoConstraints="NO" id="4yz-r7-Kd5">
-                                                <rect key="frame" x="0.0" y="0.0" width="240" height="340"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="170"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card9" translatesAutoresizingMaskIntoConstraints="NO" id="HF9-y5-4hC">
-                                                <rect key="frame" x="265" y="0.0" width="240" height="340"/>
+                                                <rect key="frame" x="145" y="0.0" width="120" height="170"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTg-qh-I24" userLabel="deal">
-                                        <rect key="frame" x="170.5" y="393" width="164" height="62"/>
+                                        <rect key="frame" x="91.5" y="223" width="82" height="31"/>
                                         <state key="normal" image="dealbutton"/>
                                         <connections>
                                             <action selector="dealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7WW-Tx-pcq"/>
