@@ -5,6 +5,10 @@
 //  Created by Jeet on 16/01/20.
 //  Copyright © 2020 Jeet. All rights reserved.
 //
+// Restart Icon: Attributes to User Freepik from www.flaticon.com
+// Information Icon: Attributes to User Freepik from www.flaticon.com
+// Dot Icon: Attributes to user Pixel-Perfect from www.flaticon.com
+
 
 import UIKit
 
@@ -50,6 +54,26 @@ class ViewController: UIViewController {
         
         // Reset all counters when app launches
         resetGame((Any).self)
+        
+        // Adding a custom thumb icon to the slider thumb
+        redraw(mainSlider)
+        
+        
+        // Transitions / Fade Animations
+        let transition = CATransition()
+        transition.type = CATransitionType.fade
+        transition.duration = 1
+        transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeOut)
+        view.layer.add(transition, forKey: nil)
+    }
+    
+    func redraw(_ slider: UISlider){
+        // Making a UIImage object to hold our 'dot' image file
+        let thumbImageNormal = UIImage(named: "dot")!
+        
+        // Setting the UIImage object as two states of our slider thumb
+        slider.setThumbImage(thumbImageNormal, for: .normal)
+        slider.setThumbImage(thumbImageNormal, for: .highlighted)
     }
     
     // Generate new round values
@@ -83,11 +107,14 @@ class ViewController: UIViewController {
         let answerAlert = UIAlertController(title: "You were \(diff) point/s off", message: "You got \(score) points", preferredStyle: .alert)
         
         // Dismiss alert
-        let alertButton = UIAlertAction(title: "New Round", style: .default, handler: nil)
+        let alertButton = UIAlertAction(title: "New Round", style: .default,
+                                        handler:  { _ in
+                                            self.newRound()
+        })
         answerAlert.addAction(alertButton)
         
         // Generate new round values
-        present(answerAlert, animated: true, completion: {self.newRound()})
+        present(answerAlert, animated: true, completion: nil)
     }
     
 }
