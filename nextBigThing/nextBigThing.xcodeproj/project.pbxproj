@@ -70,14 +70,14 @@
 		10A8696F23C8302600F5DA77 /* nextBigThing */ = {
 			isa = PBXGroup;
 			children = (
-				10A8697023C8302600F5DA77 /* AppDelegate.swift */,
-				10A8697223C8302600F5DA77 /* SceneDelegate.swift */,
 				10A8697423C8302600F5DA77 /* ViewController.swift */,
 				1004BB2D23C9AEA8003BA026 /* CustomCell.swift */,
 				10A8698623C8500500F5DA77 /* SecondViewController.swift */,
 				10A8697623C8302600F5DA77 /* Main.storyboard */,
 				10A8697923C8302800F5DA77 /* Assets.xcassets */,
 				10A8697B23C8302800F5DA77 /* LaunchScreen.storyboard */,
+				10A8697023C8302600F5DA77 /* AppDelegate.swift */,
+				10A8697223C8302600F5DA77 /* SceneDelegate.swift */,
 				10A8697E23C8302800F5DA77 /* Info.plist */,
 			);
 			path = nextBigThing;
