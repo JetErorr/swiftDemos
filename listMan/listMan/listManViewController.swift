@@ -6,7 +6,7 @@
 //  Copyright © 2020 Jeet. All rights reserved.
 //
 
-var sampleData = false
+var sampleData = true
 
 import UIKit
 
